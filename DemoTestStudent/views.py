@@ -4,4 +4,4 @@ from django.http import HttpResponse
 
 # Create your views here.
 def vw_demostudent(request):
-    return HttpResponse("My First View")
+    return HttpResponse("Hi This is my first Azure Application Hosts")
