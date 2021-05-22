@@ -37,9 +37,6 @@ jobs:
     - name: Install dependencies
       run: pip install -r requirements.txt
 
-    - name: Run server
-      run: python manage.py runserver
-
     - name: Run Azure webapp deploy action using publish profile credentials
       uses: azure/webapps-deploy@v2
       with:
@@ -47,3 +44,5 @@ jobs:
         slot-name: Production
         publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_EC248D03676842C2BEF812038A75B9F0 }}
 
+     - name: Run server
+       run: python manage.py runserver
