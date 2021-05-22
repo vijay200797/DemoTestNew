@@ -44,5 +44,5 @@ jobs:
         slot-name: Production
         publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_EC248D03676842C2BEF812038A75B9F0 }}
 
-     - name: Run server
-       run: python manage.py runserver
+    - name: Run server
+      run: python manage.py runserver
